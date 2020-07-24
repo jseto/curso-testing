@@ -1,0 +1,26 @@
+{
+  "name": "guide-saas",
+  "version": "0.0.1",
+  "description": "Tutorial form 0 to full SaaS project - TDD - React - Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jseto/guide-saas.git"
+  },
+  "keywords": [
+    "TDD",
+    "SaaS",
+    "React",
+    "Preact",
+    "Firebase"
+  ],
+  "author": "Josep Seto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jseto/guide-saas/issues"
+  },
+  "homepage": "https://github.com/jseto/guide-saas#readme"
+}
