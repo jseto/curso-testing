@@ -31,8 +31,8 @@ Para configurar el comportamiento del compilador de Typescript se usa el fichero
 Creamos nuestro primer programa en Typescript en [./src/index.ts](./src/index.ts) y lo compilamos con `tsc` y ejecutamos con `node` para verificar que Typescript funciona.
 
 ```sh
-tsc ./src/index.ts
-node ./src/index.js
+tsc
+node ./out/index.js
 ```
 
 ## Configuración de Jest
@@ -62,37 +62,19 @@ jest --watch
 
 si queremos que los tests se ejecuten cada vez que se actualiza el proyecto.
 
-Al ejecutar Jest con un fichero vacío, este nos reportará que el test no ha pasado pero Jest debe ejecutarse sin errores. La respuesta de Jest debería ser parecida a esta:
-
-```
- FAIL  test/index.spec.ts
- ● Test suite failed to run
-   Your test suite must contain at least one test.
-      at onResult (node_modules/@jest/core/build/TestScheduler.js:175:18)
-      at node_modules/@jest/core/build/TestScheduler.js:304:17
-      at node_modules/emittery/index.js:260:13
-          at Array.map (<anonymous>)
-      at Emittery.Typed.emit (node_modules/emittery/index.js:258:23)
-
-Test Suites: 1 failed, 1 total
-Tests:       0 total
-Snapshots:   0 total
-Time:        2.721 s
-Ran all test suites.
-```
-
 Para comprobar que todo va bien, creamos un pequeño test en el anterior [fichero](./test/index.spec.ts)
 
-## Configuración de Webpack
-
-La configuración de Webpack es muy sencilla, simplemente le indicaremos en que fichero estará el script de arranque del proyecto, le pediremos que genere _source maps_ para poder depurar errores y que use el transpilador de Typescript con _ts-loader_.
-
-Instalamos el paquete `ts-loader`
+y ejecutamos Jest
 
 ```sh
-npm i -D ts-loader
-```
+jest
 
-```js
-```
+ PASS  test/index.spec.ts
+  ✓ al comparar dos números iguales, el test debería pasar (3 ms)
 
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.201 s, estimated 3 s
+Ran all test suites.
+```
