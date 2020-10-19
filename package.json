@@ -1,37 +1,36 @@
 {
-  "name": "guia-saas",
+  "name": "curso-testing",
   "version": "0.1.0",
-  "description": "Tutorial para crear un SaaS de 0 a 100",
-  "main": "index.js",
+  "description": "Curso de Tests Unitarios y E2E en entorno Web",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jseto/guia-saas.git"
+    "url": "git+https://github.com/jseto/curso-testing.git"
   },
   "keywords": [
-    "SaaS",
     "TypeScript",
+    "JavaScript",
     "TDD",
-    "Firebase",
-    "React",
-    "Preact",
-    "Plugin"
+    "Unit Testing",
+    "Tests Unitarios",
+    "e2e",
+    "BDD"
   ],
   "author": "Josep",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jseto/guia-saas/issues"
+    "url": "https://github.com/jseto/curso-testing/issues"
   },
-  "homepage": "https://github.com/jseto/guia-saas#readme",
+  "homepage": "https://github.com/jseto/curso-testing#readme",
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^26.0.9",
-    "jest": "^26.2.2",
-    "ts-jest": "^26.1.4",
-    "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1"
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3",
+    "ts-jest": "^26.4.1",
+    "ts-loader": "^8.0.5",
+    "typescript": "^4.0.3",
+    "webpack": "^5.1.3"
   }
 }
